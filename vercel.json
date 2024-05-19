@@ -87,9 +87,25 @@
     },
     {
 
+      "src":"/payment-cancel",
+      "dest":"index.js"
+    },
+    {
+
+      "src":"/order-success/",
+      "dest":"index.js"
+    },
+    {
+
+      "src":"/order-success/(.*)",
+      "dest":"index.js"
+    },
+    {
+
       "src":"/",
       "dest":"build/index.html"
     },
+    
     {
 
       "src":"/(.+)",
