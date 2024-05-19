@@ -18,7 +18,7 @@
     },
     {
 
-      "src":"/products/(*)",
+      "src":"/products/(.*)",
       "dest":"index.js"
     },    {
 
@@ -27,7 +27,7 @@
     },
     {
 
-      "src":"/categories/(*)",
+      "src":"/categories/(.*)",
       "dest":"index.js"
     },
     {
@@ -37,7 +37,7 @@
     },
     {
 
-      "src":"/brands/(*)",
+      "src":"/brands/(.*)",
       "dest":"index.js"
     },
     {
@@ -47,7 +47,7 @@
     },
     {
 
-      "src":"/users/(*)",
+      "src":"/users/(.*)",
       "dest":"index.js"
     },
     {
@@ -57,7 +57,7 @@
     },
     {
 
-      "src":"/auth/(*)",
+      "src":"/auth/(.*)",
       "dest":"index.js"
     },
     {
@@ -67,7 +67,7 @@
     },
     {
 
-      "src":"/cart/(*)",
+      "src":"/cart/(.*)",
       "dest":"index.js"
     },
     {
@@ -77,7 +77,7 @@
     },
     {
 
-      "src":"/orders/(*)",
+      "src":"/orders/(.*)",
       "dest":"index.js"
     },
     {
