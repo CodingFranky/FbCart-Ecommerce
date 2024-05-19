@@ -162,9 +162,9 @@ app.post('/api/create-checkout-session', async (req, res) => {
       payment_method_types: ["card"],
       line_items: lineItems, 
       mode: 'payment',
-      success_url: `http://localhost:8080/${url}`,
+      success_url: `https://fbcart-ecommerce.vercel.app/${url}`,
 
-      cancel_url:`http://localhost:8080/payment-cancel`
+      cancel_url:`https://fbcart-ecommerce.vercel.app/payment-cancel`
     });
     res.json({id:session.id})
   } catch (error) {
