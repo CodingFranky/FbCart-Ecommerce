@@ -161,6 +161,7 @@ function NavBar({ children }) {
               <Disclosure.Panel className="md:hidden">
                 <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
                   {navigation.map((item) => (
+                    item[userInfo.role]?(
                     <Link to={item.link}>
                     <Disclosure.Button
                       key={item.name}
@@ -176,7 +177,7 @@ function NavBar({ children }) {
                     >
                       {item.name}
                     </Disclosure.Button>
-                    </Link>
+                    </Link>):null
                   ))}
                 </div>
                 <div className="border-t border-gray-700 pb-3 pt-4">
