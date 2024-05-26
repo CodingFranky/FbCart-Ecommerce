@@ -7,7 +7,7 @@ import {
   selectProductById,
   selectProductListStatus,
 } from '../productSlice';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { addToCartAsync, selectItems } from '../../cart/cartSlice';
 import { Grid } from 'react-loader-spinner';
 import { discountedPrice } from '../../../app/constants';
@@ -182,6 +182,15 @@ export default function ProductDetail() {
                 >
                   Add to Cart
                 </button>
+                <Link to='/cart'>
+                <button
+                  
+                  type="submit"
+                  className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-yellow-300 px-8 py-3 text-base font-medium text-white hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:ring-offset-2"
+                >
+                  Go to Cart
+                </button>
+                </Link>
               </form>
             </div>
 
